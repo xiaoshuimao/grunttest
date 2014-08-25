@@ -2,6 +2,8 @@
   "family": "test",
   "version": "0.0.1",
   "name": "gruntTest",
+  "author": "w567675",
+  "email": "",
   "spm": {
     "alias": {
         "jquery": "lib/jquery/1.11.1/jquery",
