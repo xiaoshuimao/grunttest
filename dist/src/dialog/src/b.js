@@ -1,0 +1,1 @@
+define("dist/src/dialog/src/b",[],function(o,n,c){function i(){console.log("B")}c.exports=i});

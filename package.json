@@ -1,0 +1,18 @@
+{
+  "family": "test",
+  "version": "0.0.1",
+  "name": "gruntTest",
+  "spm": {
+    "alias": {
+        "jquery": "lib/jquery/1.11.1/jquery",
+
+        "dialog": "dist/src/dialog/src/dialog"
+    }
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-cmd-concat": "0.2.0",
+    "grunt-contrib-uglify": "0.2.0",
+    "grunt-contrib-clean": "~0.4.0"
+  }
+}
