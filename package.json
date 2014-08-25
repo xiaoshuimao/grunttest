@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "name": "gruntTest",
   "author": "w567675",
-  "email": "403724532@qq.com",
+  "email": "403724532qq.com",
   "spm": {
     "alias": {
         "jquery": "lib/jquery/1.11.1/jquery",
