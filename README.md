@@ -12,9 +12,11 @@ grunt-contrib-clean
 目录结构
 ---------
 ```
-app                                 -- 特定项目特定页面的业务层js都在这里
-   app1
-       index
+app                                 -- 业务层js文件夹
+   app1                             -- app1项目
+       index                        -- 项目首页
+            src                     
+                index.js            -- 业务js
 ```
 
 配置文件
