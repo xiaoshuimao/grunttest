@@ -73,7 +73,39 @@ seajs-config.js                     -- seajs的配置文件
 1:去掉css支持，推荐link标签同步引入。如果实在要用，可以用seajs-css插件来完成。				
 2:preload移除，推荐script标签同步引入。如果实在要用，可以用seajs-preload插件来完成。				
 > seajs-prelload通过script标签同步引入为的的是在seajs-config.js中配置其他seajs插件的预加载.
+>
 > seajs-style通过script标签同步引入的原因会在后面讲到.
+
+##seajs配置
+**seajs-config.js**
+```
+seajs.config({
+    /*模块系统的基础路径
+     ** 基于seajs.js文件的路基   
+     ** 2.3.0去掉根据sea.js路径自动猜测base路径的功能.交给用户自己配置
+    */
+    base:'../../',
+    /*别名配置*/
+    alias:{
+        "seajs-css": "lib/seajs/2.3.0/seajs-css",
+        "seajs-style": "lib/seajs/2.3.0/seajs-style",
+        "seajs-debug": "lib/seajs/2.3.0/seajs-debug",
+        "jquery":"lib/jquery/1.11.1/jquery",
+
+        /*弹窗*/
+        "dialog": "src/dialog/src/dialog"
+    },
+    /*预加载,
+     ** 2.3.0 preload移除
+     ** preload无序加载
+     ** seajs-debug需要提前加载seajs-style
+    */
+    preload: ['seajs-css', 'seajs-debug'],
+    /*.js结尾的文件全部改成加载-debug.js*/
+    // map:[['.js','-debug.js']],
+    debug:1
+});
+```
 
 ##业务模块
 **index.js**
