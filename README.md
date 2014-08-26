@@ -41,10 +41,11 @@ src                                 -- 自定义模块源码
             dialog.js               -- dialog.js文件
             dialog_css.css          -- dialog_css.css文件
 Gruntfile.js                        -- Gruntfile.js文件,用来自定义grunt任务
-package.json                        -- 包文件(name,version...)
+package.json                        -- 包文件(name,version,devDependencies...),可通过npm install来安装devDependencies字段中的依赖
+seajs-config.js                     -- seajs的配置文件
 ```
 
-配置文件
+##模块详解
 ---------
 
 
