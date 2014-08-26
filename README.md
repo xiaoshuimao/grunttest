@@ -2,11 +2,11 @@ grunt构建工具测试
 =========
 项目工具
 ---------
-seajs2.3.0		
-nodejs	
+seajs2.3.0https://github.com/seajs/seajs     
+nodejshttp://www.nodejs.org/      
 grunt	
-grunt-cmd-transport	
-grunt-cmd-concat	
+grunt-cmd-transport  	
+grunt-cmd-concat  	   
 grunt-contrib-uglify	
 grunt-contrib-clean	
 目录结构
@@ -45,8 +45,21 @@ package.json                        -- 包文件(name,version,devDependencies...
 seajs-config.js                     -- seajs的配置文件
 ```
 
-##模块详解
+模块详解
+---------
+###业务模块
+**index.js**
+```
+define(function (require, exports) {
+  
+    var $ = require("jquery"),
+    var Dialog = require("dialog");
 
+    $("#btnDialog").bind("click", function() {
+        new Dialog();
+    })
+});
+```
 
 
 grunttest
