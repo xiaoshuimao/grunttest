@@ -11,7 +11,7 @@ module.exports = function (grunt) {
             options : {
                 paths : ['.'],
                 include: 'relative',
-                alias: '<%= pkg.spm.alias %>',
+                alias: '<%= pkg.options.alias %>',
                 parsers : {
                     '.js' : [script.jsParser],
                     '.css' : [style.css2jsParser],
