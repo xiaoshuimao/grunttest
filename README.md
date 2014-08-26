@@ -5,10 +5,10 @@ grunt构建工具测试
 seajs2.3.0                 --https://github.com/seajs/seajs     
 nodejs                     --http://www.nodejs.org/      
 grunt                      --https://github.com/gruntjs/grunt	
-grunt-cmd-transport  	   --https://github.com/spmjs/grunt-cmd-transport
-grunt-cmd-concat  	      --https://github.com/spmjs/grunt-cmd-concat
-grunt-contrib-uglify	      --https://github.com/gruntjs/grunt-contrib-uglify
-grunt-contrib-clean	      --https://github.com/gruntjs/grunt-contrib-clean
+grunt-cmd-transport  	   --https://github.com/spmjs/grunt-cmd-transport  
+grunt-cmd-concat  	      --https://github.com/spmjs/grunt-cmd-concat  
+grunt-contrib-uglify	      --https://github.com/gruntjs/grunt-contrib-uglify  
+grunt-contrib-clean	      --https://github.com/gruntjs/grunt-contrib-clean   
 目录结构
 ---------
 ```
