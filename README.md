@@ -60,6 +60,19 @@ define(function (require, exports) {
     })
 });
 ```
+###自定义模块
+**dialog.js**
+```
+define(function (require, exports) {
+  
+    var $ = require("jquery"),
+    var Dialog = require("dialog");
+
+    $("#btnDialog").bind("click", function() {
+        new Dialog();
+    })
+});
+```
 
 
 grunttest
