@@ -29,6 +29,9 @@ lib                                 -- base模块,seajs及各种cmd模块都在�
          1.11.1                     -- 1.11.1版本的jquery
                jquery.js            -- CMD版本jquery
                jquery-debug.js      -- CMD版本的jquery开发版
+html                                -- 静态页面
+    index   
+         index.html                 -- 首页入口
 node_moddules                       -- nodejs的模块
    grunt                            -- grunt工具
    grunt-cmd-transport              -- transport工具,用来添加模块ID和模块依赖,例如(define('a',['b.js'],function(require,exports,module){}))
