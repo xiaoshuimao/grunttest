@@ -47,7 +47,28 @@ Gruntfile.js                        -- Gruntfile.js文件,用来自定义grunt�
 package.json                        -- 包文件(name,version,devDependencies...),可通过npm install来安装devDependencies字段中的依赖
 seajs-config.js                     -- seajs的配置文件
 ```
-
+静态页面
+--------
+**index.html**
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+</head>
+<body>
+<input type="button" id="btnDialog" value="show dialog"/>
+<script src="../../lib/seajs/2.3.0/sea.js"></script>
+<script src="../../lib/seajs/2.3.0/seajs-preload.js"></script>
+<script src="../../lib/seajs/2.3.0/seajs-style.js"></script>
+<script src="../../seajs-config.js"></script>
+<script type="text/javascript">
+    seajs.use("../../dist/app/app1/index/src/index.js")
+</script>
+</body>
+</html>
+```
 模块详解
 ---------
 ###业务模块
