@@ -2,9 +2,9 @@ grunt构建工具测试
 =========
 项目工具
 ---------
-seajs2.3.0  https://github.com/seajs/seajs     
-nodejs      http://www.nodejs.org/      
-grunt	
+seajs2.3.0                 --https://github.com/seajs/seajs     
+nodejs                     --http://www.nodejs.org/      
+grunt                      --https://github.com/gruntjs/grunt	
 grunt-cmd-transport  	
 grunt-cmd-concat  	   
 grunt-contrib-uglify	
