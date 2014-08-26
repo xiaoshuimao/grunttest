@@ -66,16 +66,35 @@ define(function (require, exports) {
 ###自定义模块
 **dialog.js**
 ```
-define(function (require, exports) {
-  
-    var $ = require("jquery"),
-    var Dialog = require("dialog");
+define(function(require, exports, module) {
 
-    $("#btnDialog").bind("click", function() {
-        new Dialog();
-    })
-});
+    var $ = require("jquery");
+    var B = require("./b");
+    
+    require("./dialog_css.css");
+    
+    new B();
+    
+    function Dialog() {  
+        alert('Dialog')
+    }
+    module.exports = Dialog;
+})
 ```
+**b.js**
+```
+define(function(require, exports, module) {
 
+  function B() {
+    console.log('B')
+  };
 
+  module.exports = B;
+})
+```
+**dialog_css.css**
+```
+@charset "utf-8";
+.dialog{ width: 100%;}
+```
 grunttest
