@@ -2,16 +2,20 @@ grunt构建工具测试
 =========
 项目工具
 ---------
-seajs 2.3.0
-nodejs
-grunt
-grunt-cmd-transport
-grunt-cmd-concat
-grunt-contrib-uglify
-grunt-contrib-clean
+seajs2.3.0		
+nodejs	
+grunt	
+grunt-cmd-transport	
+grunt-cmd-concat	
+grunt-contrib-uglify	
+grunt-contrib-clean	
 目录结构
 ---------
-html>index
+```
+app                                 -- 特定项目特定页面的业务层js都在这里
+   app1
+       index
+```
 
 配置文件
 ---------
