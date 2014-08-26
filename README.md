@@ -72,6 +72,8 @@ seajs-config.js                     -- seajs的配置文件
 注意:seajs-2.3.0[seajs#1228](https://github.com/seajs/seajs/issues/1228)				
 1:去掉css支持，推荐link标签同步引入。如果实在要用，可以用seajs-css插件来完成。				
 2:preload移除，推荐script标签同步引入。如果实在要用，可以用seajs-preload插件来完成。				
+> seajs-prelload通过script标签同步引入为的的是在seajs-config.js中配置其他seajs插件的预加载.
+> seajs-style通过script标签同步引入的原因会在后面讲到.
 
 ##业务模块
 **index.js**
