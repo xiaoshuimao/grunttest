@@ -20,6 +20,9 @@ app                                 -- 业务层js文件夹
 lib                                 -- base模块,seajs及各种cmd模块都在这里
    seajs                            --
         2.3.0                       -- 2.3.0版本的seajs
+             seajs.js               -- seajs文件
+             seajs-debug.js         -- seajs开发版
+             ...                    -- 其他seajs插件
    jquery
          1.8.2                      -- 1.8.2版本的jquery
                ...                  -- 略过
@@ -29,7 +32,16 @@ lib                                 -- base模块,seajs及各种cmd模块都在�
 node_moddules                       -- nodejs的模块
    grunt                            -- grunt工具
    grunt-cmd-transport              -- transport工具,用来添加模块ID和模块依赖,例如(define('a',['b.js'],function(require,exports,module){}))
-               
+   grunt-cmd-concat                 -- concat工具,合并依赖的模块
+   grunt-contrib-uglify             -- uglify工具,压缩文件
+   grunt-contrib-clean              -- clean工具,清理文件
+src                                 -- 自定义模块源码
+   dialog                           -- dialog模块   
+         src
+            dialog.js               -- dialog.js文件
+            dialog_css.css          -- dialog_css.css文件
+Gruntfile.js                        -- Gruntfile.js文件,用来自定义grunt任务
+package.json                        -- 包文件(name,version...)
 ```
 
 配置文件
