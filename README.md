@@ -402,5 +402,45 @@ module.exports = function (grunt) {
   grunt.registerTask('app1', ['transport:app1', 'concat:app1', 'uglify:app1', 'clean']);
 };
 ```
+##### gruntFile.js一般结构
+```
+module.exports = function (grunt){
+   grunt.initConfig({
+      ...
+   })
+}
+```
+> 这个是grunt统一写法.grunt.initConfig({...})函数里面开始配置任务.
+
+##### 模块中require(css)
+
+如果模块中require了一个css，需要通过将该css转换成js文件，这样seajs就能把该css通过sea-style插件的seajs.importStyle函数插入一个link标签到Html中.
+```
+   //引入transport
+   var transport = require('grunt-cmd-transport');
+   var style = transport.style.init(grunt);
+   var text = transport.text.init(grunt);
+   var script = transport.script.init(grunt);
+```
+```
+  transport: {
+      options: {
+        ...
+        parsers: {
+          '.js': [script.jsParser],
+          '.css': [style.css2jsParser],
+          '.html': [text.html2jsParser]
+        }
+        ...
+      }
+      ...
+   }
+```
+> 在具体的任务(task)中配置转换模式
+
+##### 配置任务和目标(task,target)
+
+* 
+
 
 grunttest
