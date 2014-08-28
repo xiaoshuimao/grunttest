@@ -268,7 +268,7 @@ define(function(require, exports, module) {
 >
 > > * 这里{key:value} 对应你写的name和version,所以name和version必须写,方便别人install你的模块.
     
-
+更多详细可以这个[npm的package.json中文文档 #6](https://github.com/ericdum/mujiang.info/issues/6)
 
 ### grunt任务配置
 **Gruntfile.js**
