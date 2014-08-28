@@ -416,12 +416,13 @@ module.exports = function (grunt){
 
 如果模块中require了一个css，需要通过将该css转换成js文件，这样seajs就能把该css通过sea-style插件的seajs.importStyle函数插入一个link标签到Html中.
 ```
-   //引入transport
    var transport = require('grunt-cmd-transport');
    var style = transport.style.init(grunt);
    var text = transport.text.init(grunt);
    var script = transport.script.init(grunt);
 ```
+> 引入transport模块
+
 ```
   transport: {
       options: {
@@ -436,9 +437,11 @@ module.exports = function (grunt){
       ...
    }
 ```
-> 在具体的任务(task)中配置转换模式
+> 在具体的任务(task)中配置转换模式[转换过程详细可以参看spm](http://docs.spmjs.org/doc/build-task#js-依赖的-css-文件)
 
 ##### 配置任务和目标(task,target)
+
+
 
 * 
 
