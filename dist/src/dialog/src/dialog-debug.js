@@ -1,3 +1,4 @@
+/*! gruntTest - v0.0.1 - 2014-08-28 */
 define("dist/src/dialog/src/dialog-debug", [ "lib/jquery/1.11.1/jquery-debug", "./b-debug", "./dialog_css-debug.css" ], function(require, exports, module) {
     var $ = require("lib/jquery/1.11.1/jquery-debug");
     var B = require("./b-debug");

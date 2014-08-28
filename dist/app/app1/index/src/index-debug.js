@@ -1,3 +1,4 @@
+/*! gruntTest - v0.0.1 - 2014-08-28 */
 define("dist/app/app1/index/src/index-debug", [ "lib/jquery/1.11.1/jquery-debug", "dist/src/dialog/src/dialog-debug" ], function(require, exports) {
     var $ = require("lib/jquery/1.11.1/jquery-debug");
     var Dialog = require("dist/src/dialog/src/dialog-debug");
@@ -19,7 +20,7 @@ define("dist/app/app1/index/src/index-debug", [ "lib/jquery/1.11.1/jquery-debug"
  *
  * Date: 2014-05-01T17:42Z
  */
-define("jquery-debug", [], function(require, exports, module) {
+define("lib/jquery/1.11.1/jquery-debug", [], function(require, exports, module) {
     (function(global, factory) {
         if (typeof module === "object" && typeof module.exports === "object") {
             // For CommonJS and CommonJS-like environments where a proper window is present,
@@ -7646,6 +7647,7 @@ define("jquery-debug", [], function(require, exports, module) {
     });
 });
 
+/*! gruntTest - v0.0.1 - 2014-08-28 */
 define("dist/src/dialog/src/dialog-debug", [ "lib/jquery/1.11.1/jquery-debug", "./b-debug" ], function(require, exports, module) {
     var $ = require("lib/jquery/1.11.1/jquery-debug");
     var B = require("./b-debug");

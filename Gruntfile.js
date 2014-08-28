@@ -49,11 +49,15 @@ module.exports = function (grunt) {
                 ]
             }
         },
+
         concat : {
             options : {
                 paths : ['.'],
-                include : 'relative'
+                include : 'relative',
+                stripBanners: true,
+                banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +'<%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
+
             dialog : {
                 files: [
                     {
@@ -65,6 +69,7 @@ module.exports = function (grunt) {
                     }
                 ]
             },
+
             app1 : {
                 options : {
                     include : 'all'
@@ -82,6 +87,7 @@ module.exports = function (grunt) {
         },
 
         uglify : {
+
             dialog : {
                 files: [
                     {
@@ -93,6 +99,7 @@ module.exports = function (grunt) {
                     }
                 ]
             },
+
             app1 : {
                 files: [
                     {
@@ -115,9 +122,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-cmd-concat');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.registerTask('dialog', ['transport:dialog', 'concat:dialog', 'uglify:dialog']);
-    grunt.registerTask('app1', ['transport:app1', 'concat:app1', 'uglify:app1']);
-    grunt.registerTask('build-dialog', ['transport:dialog', 'concat:dialog', 'uglify:dialog', 'clean']);
-    grunt.registerTask('build-app1', ['transport:app1', 'concat:app1', 'uglify:app1', 'clean']);
-//    grunt.registerTask('default', ['clean']);
+    // grunt.registerTask('dialog', ['transport:dialog', 'concat:dialog']);
+    // grunt.registerTask('app1', ['transport:app1', 'concat:app1']);
+    grunt.registerTask('dialog', ['transport:dialog', 'concat:dialog', 'uglify:dialog', 'clean']);
+    grunt.registerTask('app1', ['transport:app1', 'concat:app1', 'uglify:app1', 'clean']);
 };

@@ -19,7 +19,7 @@ seajs.config({
      ** preload无序加载
      ** seajs-debug需要提前加载seajs-style
     */
-    preload: ['seajs-css', 'seajs-debug'],
+    preload: ['seajs-css'],
     /*.js结尾的文件全部改成加载-debug.js*/
     // map:[['.js','-debug.js']],
     debug:1
