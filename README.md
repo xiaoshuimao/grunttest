@@ -437,7 +437,8 @@ module.exports = function (grunt){
       ...
    }
 ```
-> 在具体的任务(task)中配置转换模式[转换过程详细可以参看spm](http://docs.spmjs.org/doc/build-task#js-依赖的-css-文件)
+> 在具体的任务(task)中配置转换模式.
+> [转换过程详细可以参看spm](http://docs.spmjs.org/doc/build-task#js-依赖的-css-文件)
 
 ##### 配置任务和目标(task,target)
 
