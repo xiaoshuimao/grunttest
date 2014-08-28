@@ -441,10 +441,42 @@ module.exports = function (grunt){
 > [转换过程详细可以参看spm](http://docs.spmjs.org/doc/build-task#js-依赖的-css-文件)
 
 ##### 配置任务和目标(task,target)
+* 任务task一般格式
+```
+   xxx: {
+      options:{
+         ...
+      },
+      a:{
+         files: [
+          {
+            expand: true,
+            cwd: 'dist/',
+            src: ['xx.js'],
+            dest: 'dist/',
+            ext: '.js'
+          }
+        ]
+      },
+      b :{
+         options:{
+            ....
+         }
+         .....
+      }
+   }
+```
+> xxx为任务task，a和b为目标
+>
+> 任务级别的options被目标级别的options覆盖
 
 
+* transport 添加模块id及其依赖
+```
 
-* 
+```
+
+待续...
 
 
 grunttest
