@@ -473,8 +473,33 @@ module.exports = function (grunt){
 
 * transport 添加模块id及其依赖
 ```
+transport: {
+      options: {
+        paths: ['.'],
+        alias: '<%= pkg.options.alias %>',
+        parsers: {
+          '.js': [script.jsParser],
+          '.css': [style.css2jsParser],
+          '.html': [text.html2jsParser]
+        }
+      },
 
+      dialog: {
+        options: {
+          idleading: 'dist/src/'
+        },
+
+        files: [
+          {
+            cwd: 'src/',
+            src: '**/*',
+            filter: 'isFile',
+            dest: '.build/src'
+          }
+        ]
+      }
 ```
+> 
 
 待续...
 
